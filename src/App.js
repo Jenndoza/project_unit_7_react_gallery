@@ -31,6 +31,7 @@ class App extends Component {
 
   render() {
     return (
+      <div className="container">
       <BrowserRouter>
         <SearchForm onSearch={(query) => this.searchFunction(query)} />
         <Nav searchFunction={(query) => this.searchFunction(query)} />
@@ -56,6 +57,7 @@ class App extends Component {
           />
         </Switch>
       </BrowserRouter>
+      </div> 
     );
   }
 }
